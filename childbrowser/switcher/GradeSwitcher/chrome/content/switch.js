@@ -64,19 +64,19 @@ function eSwitchLocales_switch(locale, displayName) {
   // Changing Interface
   prefs.getCharPref("general.useragent.locale", locale);
 
-  if(locale == "ja" || locale == "el") {
+  if(locale == "ja-JP-first" || locale == "ja-JP-second") {
     prefs.setCharPref("extensions.lastSelectedSkin", "theme12");
     prefs.setBoolPref("extensions.dss.switchPending", true);
   }
-  else if(locale == "da" || locale == "sv"){
+  else if(locale == "ja-JP-third" || locale == "ja-JP-fourth"){
     prefs.setCharPref("extensions.lastSelectedSkin", "theme34");
     prefs.setBoolPref("extensions.dss.switchPending", true);
   }
-  else if(locale == "pl" || locale == "sk"){
+  else if(locale == "ja-JP-fifth" || locale == "ja-JP-sixth"){
     prefs.setCharPref("extensions.lastSelectedSkin", "theme56");
     prefs.setBoolPref("extensions.dss.switchPending", true);
   }
-  else if(locale == "et" || locale == "en"){
+  else if(locale == "ja" || locale == "ja-JP" || locale == "en"){
     prefs.setCharPref("extensions.lastSelectedSkin", "classic/1.0");
     prefs.setBoolPref("extensions.dss.switchPending", true);
   }
@@ -86,7 +86,7 @@ function eSwitchLocales_switch(locale, displayName) {
   }
 
   // Setting Shortcut Key
-  if(locale == "et" || locale=="ko" || locale=="ku" || locale=="en-US"){
+  if(locale == "ja" || locale == "ja-JP-mac" || locale=="ko" || locale=="ku" || locale=="en-US"){
     try{
       prefs.clearUserPref("keyconfig.main.bookmarkAllTabsKb");
       prefs.clearUserPref("keyconfig.main.addBookmarkAsKb");
@@ -142,7 +142,7 @@ function eSwitchLocales_switch(locale, displayName) {
       prefs.clearUserPref("keyconfig.main.xxx_key44_cmd_textZoomEnlarge");
     }catch (e) { }
   }
-  else if(locale == "ja" || locale == "el" || locale == "da" || locale == "sv"){
+  else if(locale == "ja-JP-first" || locale == "ja-JP-second" || locale == "ja-JP-third" || locale == "ja-JP-fourth"){
       prefs.setCharPref("keyconfig.main.bookmarkAllTabsKb", "!][][");
       prefs.setCharPref("keyconfig.main.addBookmarkAsKb", "!][][");
       prefs.setCharPref("keyconfig.main.focusURLBar", "!][][");
