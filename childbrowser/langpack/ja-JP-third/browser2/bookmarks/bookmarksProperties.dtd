@@ -1,0 +1,13 @@
+<!--
+-->
+
+<!ENTITY bookmarks.windowtitle.label	"&quot;**bm_title**&quot; のプロパティ">
+
+<!ENTITY bookmarks.information.label	"情報:">
+<!ENTITY bookmarks.name.label		"名前:">
+<!ENTITY bookmarks.micsum.label		"ライブタイトル">
+<!ENTITY bookmarks.location.label	"URL:">
+<!ENTITY bookmarks.feedurl.label	"フィード URL:">
+<!ENTITY bookmarks.shortcut.label	"キーワード:">
+<!ENTITY bookmarks.description.label	"説明:">
+<!ENTITY bookmarks.webpanels.label	"このブックマークをサイドバーに読み込む">

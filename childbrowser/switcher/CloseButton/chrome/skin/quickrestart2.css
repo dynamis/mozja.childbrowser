@@ -1,0 +1,17 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#quickrestart-button {
+  list-style-image: url("chrome://quickrestart/skin/quickrestart-24.png");
+}
+
+#quickrestart-button:hover {
+  list-style-image: url("chrome://quickrestart/skin/quickrestart-24-hover.png");
+}
+
+toolbar[iconsize="small"] #quickrestart-button {
+  list-style-image: url("chrome://quickrestart/skin/quickrestart-16.png");
+}
+
+toolbar[iconsize="small"] #quickrestart-button:hover {
+  list-style-image: url("chrome://quickrestart/skin/quickrestart-16-hover.png");
+}

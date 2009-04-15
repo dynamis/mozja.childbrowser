@@ -1,0 +1,9 @@
+skin	browser	theme12	jar:chrome/theme12.jar!/browser2/ appversion<3.0pre
+skin	browser	theme12 jar:chrome/theme12.jar!/browser3/ appversion>=3.0pre
+skin	communicator	theme12	jar:chrome/theme12.jar!/communicator/
+skin	global	theme12	jar:chrome/theme12.jar!/global2/ appversion<3.0pre
+skin	global	theme12	jar:chrome/theme12.jar!/global3/ appversion>=3.0pre
+skin	help	theme12	jar:chrome/theme12.jar!/help2/ appversion<3.0pre
+skin	help	theme12	jar:chrome/theme12.jar!/help3/ appversion>=3.0pre
+skin	mozapps	theme12	jar:chrome/theme12.jar!/mozapps2/ appversion<3.0pre
+skin	mozapps	theme12	jar:chrome/theme12.jar!/mozapps3/ appversion>=3.0pre

@@ -1,0 +1,107 @@
+<!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+%brandDTD;
+
+<!ENTITY loadError.label		"ページ読み込みエラー"><!-- (^^; タイトルバーやタブに表示されるので簡潔に -->
+<!ENTITY retry.label			"再試行">
+
+<!-- Specific error messages -->
+
+<!ENTITY connectionFailure.title	"正常に接続できませんでした">
+<!ENTITY connectionFailure.longDesc	"&sharedLongDesc;">
+
+<!ENTITY deniedPortAccess.title		"このアドレスへの接続は制限されています">
+<!ENTITY deniedPortAccess.longDesc	"">
+
+<!ENTITY dnsNotFound.title		"サーバが見つかりませんでした">
+<!ENTITY dnsNotFound.longDesc		"
+<ul>
+  <li><strong>www</strong>.example.com を間違えて <strong>ww</strong>.example.com と入力するなど、アドレスを間違って入力していないか確認してください。</li>
+  <li>他のサイトも表示できない場合、コンピュータのネットワーク接続を確認してください。</li>
+  <li>ファイアーウォールやプロキシでネットワークが保護されている場合、&brandShortName; による Web アクセスが許可されているか確認してください。</li>
+</ul>
+">
+
+<!ENTITY fileNotFound.title		"ファイルが見つかりませんでした">
+<!ENTITY fileNotFound.longDesc		"
+<ul>
+  <li>アドレスに大文字/小文字の違い、その他の間違いがないか確認してください。</li>
+  <li>ファイルの名前が変更、削除、または移動している可能性があります。</li>
+</ul>
+">
+
+
+<!ENTITY generic.title			"リクエストを正常に完了できませんでした">
+<!ENTITY generic.longDesc		"
+<p>何らかの理由により &brandShortName; はこのページを正常に読み込めませんでした。</p>
+">
+
+<!ENTITY malformedURI.title		"アドレスの書式が正しくありません">
+<!ENTITY malformedURI.longDesc		"
+<ul>
+  <li>Web のアドレスは通常 <strong>http://www.example.com/</strong> のようなものになります。</li>
+  <li>円記号やバックスラッシュ (<strong>\</strong>) ではなく、スラッシュ (<strong>/</strong>) が使われているか確認してください。</li>
+</ul>
+">
+
+<!ENTITY netInterrupt.title		"接続が中断されました">
+<!ENTITY netInterrupt.longDesc		"&sharedLongDesc;">
+
+<!ENTITY netOffline.title		"オフラインモードになっています">
+<!ENTITY netOffline.longDesc		"
+<ul>
+  <li>[ファイル] メニューの [オフライン作業] のチェックを外してから再度試してください。</li>
+</ul>
+">
+
+<!ENTITY netReset.title			"接続がリセットされました">
+<!ENTITY netReset.longDesc		"&sharedLongDesc;">
+
+<!ENTITY netTimeout.title		"接続がタイムアウトしました">
+<!ENTITY netTimeout.longDesc		"&sharedLongDesc;">
+
+<!ENTITY protocolNotFound.title		"アドレスのプロトコルが不明です">
+<!ENTITY protocolNotFound.longDesc	"
+<ul>
+  <li>このプロトコルを使用するアドレスを開くには、別のソフトウェアをインストールする必要があるかもしれません。</li>
+</ul>
+">
+
+<!ENTITY proxyConnectFailure.title	"プロキシサーバへの接続を拒否されました">
+<!ENTITY proxyConnectFailure.longDesc	"
+<ul>
+  <li>プロキシ設定が正しいか確認してください。</li>
+  <li>プロキシサーバが正常に動作しているかネットワーク管理者に問い合わせてください。</li>
+</ul>
+">
+
+<!ENTITY proxyResolveFailure.title	"プロキシサーバが見つかりませんでした">
+<!ENTITY proxyResolveFailure.longDesc	"
+<ul>
+  <li>プロキシ設定が正しいか確認してください。</li>
+  <li>コンピュータが有効なネットワークに接続されているか確認してください。</li>
+  <li>ファイアーウォールやプロキシでネットワークが保護されている場合、&brandShortName; による Web アクセスが許可されているか確認してください。</li>
+</ul>
+">
+
+<!ENTITY redirectLoop.title		"ページのリダイレクト設定が正しくありません">
+<!ENTITY redirectLoop.longDesc		"
+<ul>
+  <li>Cookie を無効化したり拒否していることにより、この問題が発生している可能性もあります。</li>
+</ul>
+">
+
+<!ENTITY unknownSocketType.title	"サーバの応答が不正です">
+<!ENTITY unknownSocketType.longDesc	"
+<ul>
+  <li>コンピュータにパーソナルセキュリティマネージャがインストールされているか確認してください。</li>
+  <li>サーバの設定が間違っていることにより、この問題が発生している可能性もあります。</li>
+</ul>
+">
+
+<!ENTITY sharedLongDesc			"
+<ul>
+  <li>このサイトが一時的に利用できなくなっていたり、サーバの負荷が高すぎて接続できなくなっている可能性があります。しばらくしてから再度試してください。</li>
+  <li>他のサイトも表示できない場合、コンピュータのネットワーク接続を確認してください。</li>
+  <li>ファイアーウォールやプロキシでネットワークが保護されている場合、&brandShortName; による Web アクセスが許可されているか確認してください。</li>
+</ul>
+">

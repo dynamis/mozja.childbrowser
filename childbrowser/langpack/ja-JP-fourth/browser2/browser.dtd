@@ -1,0 +1,388 @@
+<!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+
+<!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
+<!ENTITY mainWindow.title "&brandFullName;">
+<!-- LOCALIZATION NOTE (mainWindow.titlemodifier) : DONT_TRANSLATE -->
+<!ENTITY mainWindow.titlemodifier "&brandFullName;">
+<!-- LOCALIZATION NOTE (mainWindow.titlemodifiermenuseparator): DONT_TRANSLATE -->
+<!ENTITY mainWindow.titlemodifiermenuseparator " - ">
+
+<!ENTITY viewsourcetitle.preface	"次のソース: ">
+
+<!ENTITY nothingAvailable.label		"(ひょうじするこうもくがありません)">
+
+<!ENTITY tabCmd.label			"新しいタブ"><!-- ひょうじカ所によりアクセスキーが異なる -->
+<!ENTITY tabCmd.accesskey		"">
+<!ENTITY tabCmd.commandkey		"t">
+<!ENTITY openLocationCmd.label		"URL を開く...">
+<!ENTITY openLocationCmd.accesskey	"">
+<!ENTITY openFileCmd.label		"ファイルを開く...">
+<!ENTITY openFileCmd.accesskey		"">
+<!ENTITY openFileCmd.commandkey		"o">
+<!ENTITY printSetupCmd.label		"ページせってい...">
+<!ENTITY printSetupCmd.accesskey	"">
+<!ENTITY printPreviewCmd.label		"印刷プレビュー">
+<!ENTITY printPreviewCmd.accesskey	"">
+<!ENTITY printCmd.label			"印刷...">
+<!ENTITY printCmd.accesskey		"">
+<!ENTITY printCmd.commandkey		"">
+<!ENTITY import.label			"せっていとデータのインポート...">
+<!ENTITY import.accesskey		"">
+
+<!ENTITY goOfflineCmd.label		"オフライン作業">
+<!ENTITY goOfflineCmd.accesskey		"">
+
+<!ENTITY navbarCmd.label		"ナビゲーションツールバー">
+<!ENTITY navbarCmd.accesskey		"">
+<!ENTITY personalbarCmd.label		"ブックマークツールバー">
+<!ENTITY personalbarCmd.accesskey	"">
+<!ENTITY bookmarksToolbarItem.label	"ブックマークツールバーのこうもく">
+<!ENTITY taskbarCmd.label		"ステータスバー">
+<!ENTITY taskbarCmd.accesskey		"">
+
+<!ENTITY pageSourceCmd.label		"ページのソース">
+<!ENTITY pageSourceCmd.accesskey	"">
+<!ENTITY pageSourceCmd.commandkey	"u">
+<!ENTITY pageInfoCmd.label		"ページのじょうほう">
+<!ENTITY pageInfoCmd.accesskey		"">
+<!ENTITY pageInfoCmd.commandkey		"i">
+<!ENTITY fullScreenCmd.label		"ぜんがめんひょうじ">
+<!ENTITY fullScreenCmd.accesskey	"">
+
+<!ENTITY fullScreenMinimize.tooltip	"さいしょうか">
+<!ENTITY fullScreenRestore.tooltip	"元にもどす">
+<!ENTITY fullScreenClose.tooltip	"とじる">
+
+<!ENTITY closeWindow.label		"ウィンドウをとじる">
+
+<!ENTITY bookmarksMenu.label		"ブックマーク">
+<!ENTITY bookmarksMenu.accesskey	"">
+<!ENTITY addCurPageAsCmd.label		"このページをブックマーク...">
+<!ENTITY addCurPageAsCmd.commandkey	"d">
+<!ENTITY subscribeToPageMenupopup.label	"このページをこうどく">
+<!ENTITY subscribeToPageMenuitem.label	"このページをこうどく...">
+<!ENTITY addLiveBookmarkMenupopup.label	"ライブブックマークを追加">
+<!ENTITY addLiveBookmarkMenuitem.label	"ライブブックマークを追加...">
+<!ENTITY addCurPagesCmd.label		"すべてのタブをブックマーク...">
+<!ENTITY addCurPagesCmd.accesskey	"">
+<!ENTITY manBookmarksCmd.label		"ブックマークの管理...">
+<!ENTITY manBookmarksCmd.accesskey	"">
+<!ENTITY bookmarkAllCmd.label		"すべてのタブをブックマーク...">
+<!ENTITY searchBookmarksCmd.label	"ブックマークのけんさく...">
+<!ENTITY searchBookmarksCmd.accesskey	"">
+<!ENTITY searchBookmarksCmd.commandkey	"B">
+
+<!ENTITY backCmd.label			"もどる">
+<!ENTITY backCmd.accesskey		"">
+<!ENTITY backButton.tooltip		"前のページへもどります"><!-- 一つ前以外も -->
+<!ENTITY forwardCmd.label		"進む">
+<!ENTITY forwardCmd.accesskey		"">
+<!ENTITY forwardButton.tooltip		"次のページへ進みます"><!-- 一つ次以外も -->
+<!ENTITY reloadCmd.label		"こうしん">
+<!ENTITY reloadCmd.accesskey		"">
+<!ENTITY reloadButton.tooltip		"このページをさい読みこみします">
+<!ENTITY stopCmd.label			"中止">
+<!ENTITY stopCmd.accesskey		"">
+<!ENTITY stopCmd.macCommandKey		".">
+<!ENTITY stopButton.tooltip		"このページの読みこみを中止します">
+<!ENTITY goEndCap.label			"いどう">
+<!ENTITY goEndCap.tooltip		"ロケーションバーに入力された URL にいどうします">
+<!ENTITY printButton.label		"印刷">
+<!ENTITY printButton.tooltip		"このページを印刷します">
+
+<!ENTITY locationItem.title		"ロケーションバー">
+<!ENTITY searchItem.title		"けんさく">
+<!ENTITY throbberItem.title		"読みこみ中アイコン">
+<!ENTITY bookmarksItem.title		"ブックマーク">
+<!ENTITY updatesItem.title		"こうしん">
+<!ENTITY proxyIcon.tooltip		"このアイコンをドラッグ &amp; ドロップすると、このページへのリンクが作成されます">
+
+<!-- Toolbar items --> 
+<!ENTITY  homeButton.label		"ホーム">
+
+<!ENTITY bookmarksButton.label		"ブックマーク">
+<!ENTITY bookmarksButton.tooltip	"ブックマークをサイドバーにひょうじします">
+<!ENTITY bookmarksSidebarCmd.accesskey	"">
+<!ENTITY bookmarksSidebarCmd.commandkey	"b">
+<!ENTITY bookmarksSidebarWinCmd.commandkey	"i">
+
+<!ENTITY historyButton.label		"りれき">
+<!ENTITY historyButton.tooltip		"最近ひょうじしたページのりれきをサイドバーにひょうじします">
+<!ENTITY historySidebarCmd.accesskey	"">
+<!ENTITY historySidebarCmd.commandKey	"h">
+
+<!ENTITY toolsMenu.label		"ツール">
+<!ENTITY toolsMenu.accesskey		""> 
+
+<!ENTITY keywordfield.label		"このけんさくにキーワードをせってい...">
+<!ENTITY keywordfield.accesskey		"">
+<!ENTITY search.label			"Web けんさく">
+<!ENTITY search.accesskey		"">
+<!ENTITY downloads.label		"ダウンロード">
+<!ENTITY downloads.tooltip		"ダウンロードのしんちょくじょうきょうをひょうじします">
+<!ENTITY downloads.accesskey		"">
+<!ENTITY downloads.commandkey		"J">
+<!ENTITY downloadsUnix.commandkey	"y">
+<!ENTITY addons.label			"アドオン">
+<!ENTITY addons.tooltip			"インストールされている拡張機能やテーマを管理します">
+<!ENTITY addons.accesskey		"">
+
+<!ENTITY javaConsoleCmd.label		"Java コンソール">
+<!ENTITY javaConsoleCmd.accesskey	"">
+<!ENTITY errorConsoleCmd.label		"エラーコンソール">
+<!ENTITY errorConsoleCmd.accesskey	"">
+
+<!ENTITY fileMenu.label			"ファイル">
+<!ENTITY fileMenu.accesskey		"">
+<!ENTITY newMenu.label			"しんき作成">
+<!ENTITY newMenu.accesskey		"">
+<!ENTITY newNavigatorCmd.label		"新しいウィンドウ">
+<!ENTITY newNavigatorCmd.key		"N">
+<!ENTITY newNavigatorCmd.accesskey	"">
+
+<!ENTITY editMenu.label			"へんしゅう">
+<!ENTITY editMenu.accesskey		"">
+<!ENTITY undoCmd.label			"元にもどす">
+<!ENTITY undoCmd.key			"Z">
+<!ENTITY undoCmd.accesskey		"">
+<!ENTITY redoCmd.label			"やり直し">
+<!ENTITY redoCmd.key			"Y">
+<!ENTITY redoCmd.accesskey		"">
+<!ENTITY cutCmd.label			"切り取り">
+<!ENTITY cutCmd.key			"X">
+<!ENTITY cutCmd.accesskey		"">
+<!ENTITY copyCmd.label			"コピー">
+<!ENTITY copyCmd.key			"C">
+<!ENTITY copyCmd.accesskey		"">
+<!ENTITY pasteCmd.label			"はり付け">
+<!ENTITY pasteCmd.key			"V">
+<!ENTITY pasteCmd.accesskey		"">
+<!ENTITY deleteCmd.label		"さくじょ">
+<!ENTITY deleteCmd.key			"D">
+<!ENTITY deleteCmd.accesskey		"">
+<!ENTITY selectAllCmd.label		"すべてせんたく">
+<!ENTITY selectAllCmd.key		"A">
+<!ENTITY selectAllCmd.accesskey		"">
+<!ENTITY preferencesCmd.label		"オプション...">
+<!ENTITY preferencesCmd.accesskey	"">
+<!ENTITY preferencesCmdUnix.label	"せってい">
+<!ENTITY preferencesCmdUnix.accesskey	"">
+
+<!ENTITY clearPrivateDataCmd.label	"プライバシーじょうほうの消去">
+<!ENTITY clearPrivateDataCmd.accesskey	"">
+
+<!ENTITY viewMenu.label			"ひょうじ"> 
+<!ENTITY viewMenu.accesskey		"">
+<!ENTITY viewToolbarsMenu.label		"ツールバー"> 
+<!ENTITY viewToolbarsMenu.accesskey	"">
+<!ENTITY viewSidebarMenu.label		"サイドバー">
+<!ENTITY viewSidebarMenu.accesskey	"">
+<!ENTITY viewCustomizeToolbar.label	"カスタマイズ..."> 
+<!ENTITY viewCustomizeToolbar.accesskey	""> 
+
+<!-- XXX historyMenu entities are used with or without places (bug 336058) -->
+<!ENTITY historyMenu.label		"りれき">
+<!ENTITY historyMenu.accesskey		"">
+<!ENTITY historyUndoMenu.label		"最近とじたタブ">
+<!ENTITY historyUndoMenu.accesskey	"">
+
+<!-- XXX places only -->
+<!ENTITY historyHomeCmd.label		"ホーム">
+<!ENTITY historyHomeCmd.accesskey	"">
+<!ENTITY historySearchCmd.label		"りれきのけんさく...">
+<!ENTITY historySearchCmd.accesskey	"">
+<!ENTITY historyShowCmd.label		"すべてのりれきをひょうじ...">
+<!ENTITY historyShowCmd.accesskey	"">
+<!ENTITY placesToolbarButton.label	"ブックマークとりれきをひょうじ">
+<!ENTITY placesToolbarButton.tooltip	"ブックマークとりれきをひょうじします">
+<!-- XXX remove below if places sticks -->
+<!ENTITY goMenu.label			"いどう">
+<!ENTITY goMenu.accesskey		"">
+<!ENTITY goHomeCmd.label		"ホーム">
+<!ENTITY earlierHistory.label		"最近のりれき">
+<!ENTITY historyShowSidebarCmd.label	"サイドバーにひょうじ">
+<!-- XXX remove above if places sticks --> 
+
+<!ENTITY releaseCmd.accesskey		"">
+<!ENTITY releaseCmd.label		"リリースノート">
+
+<!ENTITY openCmd.commandkey		"l">
+<!ENTITY urlbar.accesskey		"">
+
+<!-- 
+  Comment duplicated from browser-sets.inc:
+
+  Search Command Key Logic works like this:
+  
+  Unix: Ctrl+J (0.8, 0.9 support)
+        Ctrl+K (cross platform binding)
+  Mac:  Ctrl+K (cross platform binding)
+  Win:  Ctrl+K (cross platform binding)
+        Ctrl+E (IE compat) 
+
+  We support Ctrl+K on all platforms now and advertise it in the menu since it is
+  our standard - it is a "safe" choice since it is near no harmful keys like "W" as
+  "E" is. People mourning the loss of Ctrl+K for emacs compat can switch their GTK
+  system setting to use emacs emulation, and we should respect it. Focus-Search-Box
+  is a fundamental keybinding and we are maintaining a XP binding so that it is easy
+  for people to switch to Linux.
+
+  Do *not* tamper with these values without talking to ben@mozilla.org
+  
+ -->
+<!ENTITY searchFocus.commandkey		"k">
+<!ENTITY searchFocus.commandkey2	"e">
+<!ENTITY searchFocusUnix.commandkey	"j">
+
+<!ENTITY openLinkCmd.label		"リンクを新しいウィンドウで開く">
+<!ENTITY openLinkCmd.accesskey		"">
+<!ENTITY openLinkCmdInTab.label		"リンクを新しいタブで開く">
+<!ENTITY openLinkCmdInTab.accesskey	"">
+<!ENTITY openLinkInWindowCmd.label	"開く">
+<!ENTITY openLinkInWindowCmd.accesskey	"">
+<!ENTITY openFrameCmd.label		"フレームを新しいウィンドウで開く">
+<!ENTITY openFrameCmd.accesskey		"">
+<!ENTITY openFrameCmdInTab.label	"フレームを新しいタブで開く">
+<!ENTITY openFrameCmdInTab.accesskey	"">
+<!ENTITY showOnlyThisFrameCmd.label	"このフレームだけをひょうじ">
+<!ENTITY showOnlyThisFrameCmd.accesskey	"">
+<!ENTITY reloadCmd.commandkey		"r">
+<!ENTITY reloadFrameCmd.label		"フレームのさい読みこみ">
+<!ENTITY reloadFrameCmd.accesskey	"">
+<!ENTITY viewPartialSourceForSelectionCmd.label	"せんたくした部分のソースをひょうじ">
+<!ENTITY viewPartialSourceForMathMLCmd.label	"MathML のソースをひょうじ">
+<!ENTITY viewPartialSourceCmd.accesskey	"">
+<!ENTITY viewPageSourceCmd.label	"ページのソースをひょうじ">
+<!ENTITY viewPageSourceCmd.accesskey	"">
+<!ENTITY viewFrameSourceCmd.label	"フレームのソースをひょうじ">
+<!ENTITY viewFrameSourceCmd.accesskey	"">
+<!ENTITY viewPageInfoCmd.label		"ページのじょうほうをひょうじ">
+<!ENTITY viewPageInfoCmd.accesskey	"">
+<!ENTITY viewFrameInfoCmd.label		"フレームのじょうほうをひょうじ">
+<!ENTITY viewFrameInfoCmd.accesskey	"">
+<!ENTITY viewImageCmd.label		"がぞうをひょうじ">
+<!ENTITY viewImageCmd.accesskey		"">
+<!ENTITY viewBGImageCmd.label		"はいけいがぞうをひょうじ">
+<!ENTITY viewBGImageCmd.accesskey	"">
+<!ENTITY setDesktopBackgroundCmd.label		"デスクトップのはいけいにせってい...">
+<!ENTITY setDesktopBackgroundCmd.accesskey	"">
+<!ENTITY bookmarkPageCmd.label		"このページをブックマーク...">
+<!ENTITY bookmarkPageCmd.accesskey	"">
+<!ENTITY bookmarkLinkCmd.label		"このリンクをブックマーク...">
+<!ENTITY bookmarkLinkCmd.accesskey	"">
+<!ENTITY bookmarkFrameCmd.label		"このフレームをブックマーク...">
+<!ENTITY bookmarkFrameCmd.accesskey	"">
+<!ENTITY sendPageCmd.label		"ページの URL をメールで送信...">
+<!ENTITY sendPageCmd.accesskey		"">
+<!ENTITY savePageCmd.label		"名前を付けてページをほぞん...">
+<!ENTITY savePageCmd.accesskey		"">
+<!-- alternate for content area context menu -->
+<!ENTITY savePageCmd.accesskey2		"">
+<!ENTITY savePageCmd.commandkey		"s">
+<!ENTITY saveFrameCmd.label		"名前を付けてフレームをほぞん...">
+<!ENTITY saveFrameCmd.accesskey		"">
+<!ENTITY saveLinkCmd.label		"名前を付けてリンク先をほぞん...">
+<!ENTITY saveLinkCmd.accesskey		"">
+<!ENTITY sendLinkCmd.label		"リンクの URL をメールで送信...">
+<!ENTITY sendLinkCmd.accesskey		"">
+<!ENTITY saveImageCmd.label		"名前を付けてがぞうをほぞん...">
+<!ENTITY saveImageCmd.accesskey		"">
+<!ENTITY sendImageCmd.label		"がぞうをメールで送信...">
+<!ENTITY sendImageCmd.accesskey		"">
+<!ENTITY copyLinkCmd.label		"リンクの URL をコピー">
+<!ENTITY copyLinkCmd.accesskey		"">
+<!ENTITY copyImageCmd.label		"がぞうの URL をコピー">
+<!ENTITY copyImageCmd.accesskey		"">
+<!ENTITY copyImageContentsCmd.label	"がぞうをコピー">
+<!ENTITY copyImageContentsCmd.accesskey	"">
+<!ENTITY blockImageCmd.accesskey	"">
+<!ENTITY metadataCmd.label		"プロパティ">
+<!ENTITY metadataCmd.accesskey		"">
+<!ENTITY copyEmailCmd.label		"メールアドレスをコピー">
+<!ENTITY copyEmailCmd.accesskey		"">
+<!ENTITY thisFrameMenu.label		"このフレーム">
+<!ENTITY thisFrameMenu.accesskey	"">
+
+<!ENTITY textZoomEnlargeCmd.label	"大きく">
+<!ENTITY textZoomEnlargeCmd.accesskey	"">
+<!ENTITY textZoomEnlargeCmd.commandkey	"+">
+<!ENTITY textZoomEnlargeCmd.commandkey2	"=">
+<!ENTITY textZoomReduceCmd.label	"小さく">
+<!ENTITY textZoomReduceCmd.accesskey	"">
+<!ENTITY textZoomReduceCmd.commandkey	"-">
+<!ENTITY textZoomResetCmd.commandkey	"0">
+<!ENTITY textZoomResetCmd.label		"ひょうじゅんサイズ">
+<!ENTITY textZoomResetCmd.accesskey	"">
+<!ENTITY textSize.label			"文字サイズ">
+<!ENTITY textSize.accesskey		"">
+
+<!ENTITY newTabButton.tooltip		"新しいタブを開きます">
+<!ENTITY newWindowButton.tooltip	"新しいウィンドウを開きます">
+<!ENTITY sidebarCloseButton.tooltip	"サイドバーをとじます">
+
+<!ENTITY cutButton.tooltip		"切り取り">
+<!ENTITY copyButton.tooltip		"コピー">
+<!ENTITY pasteButton.tooltip		"はり付け">
+
+<!ENTITY quitApplicationCmdWin.label	"しゅうりょう">
+<!ENTITY quitApplicationCmdWin.accesskey	"">
+<!ENTITY goBackCmd.commandKey		"[">
+<!ENTITY goForwardCmd.commandKey	"]">
+<!ENTITY quitApplicationCmd.label	"しゅうりょう"> 
+<!ENTITY quitApplicationCmd.accesskey	"">
+<!ENTITY quitApplicationCmdMac.label	"しゅうりょう">
+<!ENTITY quitApplicationCmdMac.key	"Q">
+
+<!ENTITY closeCmd.label			"とじる">  
+<!ENTITY closeCmd.key			"W">  
+<!ENTITY closeCmd.accesskey		"">
+
+<!ENTITY pageStyleMenu.label		"スタイルシート">
+<!ENTITY pageStyleMenu.accesskey	"">
+<!ENTITY pageStyleButton.label		"スタイルシート">
+<!ENTITY pageStyleNoStyle.label		"スタイルシートを使用しない">
+<!ENTITY pageStyleNoStyle.accesskey	"">
+<!ENTITY pageStylePersistentOnly.label	"ひょうじゅんスタイルシート">
+<!ENTITY pageStylePersistentOnly.accesskey	"">
+
+<!ENTITY pageStyleIcon.tooltip		"他のスタイルシートに切りかえます">
+<!ENTITY pageReportIcon.tooltip		"この Web サイトでのポップアップブロックせっていをへんこうします">
+
+<!ENTITY allowPopups.accesskey		"">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, which is used in the "popup blocked" info bar . -->
+<!ENTITY editPopupSettingsUnix.label	"ポップアップブロックせっていをへんこう...">
+<!ENTITY editPopupSettings.label	"ポップアップブロックせっていをへんこう...">
+<!ENTITY editPopupSettings.accesskey	"">
+<!ENTITY dontShowMessage.accesskey	"">
+
+<!ENTITY bidiSwitchPageDirectionItem.label	"ページの方向を切りかえる">
+<!ENTITY bidiSwitchPageDirectionItem.accesskey	"">
+<!ENTITY bidiSwitchTextDirectionItem.label	"テキストの方向を切りかえる">
+<!ENTITY bidiSwitchTextDirectionItem.accesskey	"">
+<!ENTITY bidiSwitchTextDirectionItem.commandkey	"X">
+
+<!ENTITY findOnCmd.label		"このページをけんさく...">
+<!ENTITY findOnCmd.accesskey		"">
+<!ENTITY findOnCmd.commandkey		"f">
+<!ENTITY findAgainCmd.label		"次をけんさく">
+<!ENTITY findAgainCmd.accesskey		"">
+<!ENTITY findAgainCmd.commandkey	"g">
+<!ENTITY findAgainCmd.commandkey2	"VK_F3">
+
+<!ENTITY spellAddToDictionary.label	"辞書に追加">
+<!ENTITY spellAddToDictionary.accesskey	"">
+<!ENTITY spellEnable.label		"このフィールドのスペルチェックを行う">
+<!ENTITY spellEnable.accesskey		"">
+<!ENTITY spellNoSuggestions.label	"(しゅうせいこうほがありません)">
+<!ENTITY spellDictionaries.label	"言語">
+<!ENTITY spellDictionaries.accesskey	"">
+<!ENTITY spellAddDictionaries.label	"辞書を追加...">
+<!ENTITY spellAddDictionaries.accesskey	"">
+
+<!-- new bookmarks and history -->
+<!ENTITY location.status.not_bookmarked		"スター (オフ)">
+<!ENTITY location.status.bookmarked		"スター (オン)">
+<!ENTITY location.status.bookmark.tooltip	"このページをブックマークに追加">

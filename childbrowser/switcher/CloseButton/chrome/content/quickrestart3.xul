@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://quickrestart/skin/quickrestart3.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://quickrestart/locale/quickrestart.dtd">
+<overlay id="quickrestart-overlay" 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://quickrestart/content/quickrestart.js" />
+
+<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton 
+        id="quickrestart-button" 
+        class="toolbarbutton-1 chromeclass-toolbar-additional"
+        label="&menu.tools.item.buttonlabel;" 
+        tooltiptext="&menu.tools.item.restart;"
+        oncommand="restartApp()" />
+</toolbarpalette>
+
+</overlay>

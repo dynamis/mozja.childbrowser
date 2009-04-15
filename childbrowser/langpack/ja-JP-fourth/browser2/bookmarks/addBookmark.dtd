@@ -1,0 +1,27 @@
+<!ENTITY newBookmark.title		"ブックマークに追加">
+<!ENTITY newbookmark.label		"このページをブックマークに追加します。">
+<!ENTITY name.label			"名前:">
+<!ENTITY name.accesskey			"N">
+<!ENTITY keyword.label			"キーワード:">
+<!ENTITY keyword.accesskey		"K">
+<!ENTITY microsummary.label		"ライブタイトル">
+<!ENTITY url.label			"URL:">
+<!ENTITY url.accesskey			"L">
+<!ENTITY button.createin.label		"作成先 &gt;&gt;">
+<!ENTITY button.createin.accesskey	"C">
+<!ENTITY button.createin2.label		"作成先 &lt;&lt;">
+<!ENTITY createin.label			"作成先:">
+<!ENTITY createin.accesskey		"C">
+<!ENTITY moveto.label			"移動先:">
+<!ENTITY moveto.accesskey		"M">
+<!ENTITY button.newfolder.label		"新しいフォルダ...">
+<!ENTITY button.newfolder.accesskey	"o">
+<!ENTITY alwayscreateinfolder.label	"次回からこのダイアログを表示しない">
+<!ENTITY alwayscreateinfolder.accesskey	"a">
+<!ENTITY dontshowmessage.tooltip	"このオプションを選択すると、新しいブックマークがそのページのタイトル名で作成されるようになります。">
+<!ENTITY selectFolder.label		"フォルダの選択">
+
+<!ENTITY expanderDown.tooltip		"ブックマークのフォルダをすべて表示する">
+<!ENTITY expanderUp.tooltip		"隠す">
+<!ENTITY acceptButton.label		"追加">
+<!ENTITY bookmarksToolbar.label		"ブックマークツールバー">

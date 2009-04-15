@@ -1,0 +1,28 @@
+<!ENTITY safeb.palm.warning.title			"偽装サイトの疑いがあります">
+
+<!ENTITY safeb.palm.message.p1				"このページは利用者の個人情報やクレジットカード番号などを盗み取る目的で作られた、偽装サイト(フィッシング詐欺サイト)であると報告されています。このページで個人情報を入力してしまうと、なりすましや詐欺などの被害に遭う恐れがあります。 &#160;">
+<!ENTITY safeb.palm.message.p1.linkText			"詳細 »">
+<!ENTITY safeb.palm.p1.linkStatusText			"詳しい説明を表示します">
+
+<!ENTITY safeb.palm.message.p2.start			"この種の偽装サイトはフィッシングと呼ばれる詐欺に使われています。本物のサイトに見せかけた詐欺ページを作り、あなたに信頼させようとしているのです。詳しくはフィッシング詐欺サイト警告機能の">
+<!ENTITY safeb.palm.message.p2.linkText			"解説ページ"><!-- (^^; このリンク中は改行されないので短く -->
+<!ENTITY safeb.palm.message.p2.end			"をご覧ください。">
+
+<!-- (^^; ユーザのホームページではなく検索エンジンのホームへのリンク -->
+<!ENTITY safeb.palm.accept.label			"スタートページに戻る"><!-- en-US: Get me out of here! -->
+<!ENTITY safeb.palm.accept.statustext			"スタートページに移動します"><!-- en-US: Navigate to my home page -->
+<!ENTITY safeb.palm.decline.label			"この警告を無視する">
+<!ENTITY safeb.palm.decline.statustext			"警告を閉じます">
+<!ENTITY safeb.palm.notforgery.label			"誤警告を報告"><!-- en-US: This isn't a web forgery -->
+
+<!ENTITY safeb.palm.addbutton.label			"ブラックリストに追加">
+<!ENTITY safeb.palm.addbutton.tooltip			"ブラックリストに追加します">
+
+<!ENTITY safeb.palm.toolmenu.label			"セーフブラウジング">
+<!ENTITY safeb.palm.toolmenu.pref.label			"設定...">
+<!ENTITY safeb.palm.toolmenu.reportphishing.label	"フィッシングサイトを報告...">
+<!ENTITY safeb.palm.toolmenu.showphishingtestpage.label	"テストページを開く">
+
+<!ENTITY safeb.palm.provider.logo.tooltip		"セーフブラウジングの警告">
+
+<!ENTITY safeb.urlbaricon.tooltip			"このページは危険かもしれません。クリックすると詳細を表示します。">

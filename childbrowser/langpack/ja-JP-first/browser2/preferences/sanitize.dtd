@@ -1,0 +1,20 @@
+<!ENTITY sanitizeDialog.title         "プライバシー情報の消去">
+
+<!ENTITY clearDataSettings.label      "プライバシー情報の消去をするときに、次の項目を消去する:">
+
+<!-- XXX rearrange entities to match physical layout when l10n isn't an issue -->
+
+<!ENTITY itemHistory.label            "表示履歴">
+<!ENTITY itemHistory.accesskey        "B">
+<!ENTITY itemFormData.label           "フォームデータ">
+<!ENTITY itemFormData.accesskey       "F">
+<!ENTITY itemPasswords.label          "パスワード">
+<!ENTITY itemPasswords.accesskey      "P">
+<!ENTITY itemCookies.label            "Cookie">
+<!ENTITY itemCookies.accesskey        "C">
+<!ENTITY itemCache.label              "キャッシュ">
+<!ENTITY itemCache.accesskey          "a">
+<!ENTITY itemDownloads.label          "ダウンロード履歴">
+<!ENTITY itemDownloads.accesskey      "D">
+<!ENTITY itemSessions.label           "認証済みのセッション">
+<!ENTITY itemSessions.accesskey       "S">

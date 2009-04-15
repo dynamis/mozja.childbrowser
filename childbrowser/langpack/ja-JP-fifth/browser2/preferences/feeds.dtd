@@ -1,0 +1,8 @@
+<!ENTITY  feedClick.label		"Web フィードをクリックしたとき:">
+<!ENTITY  showPreview.label		"プレビューを表示して購読に使用するフィードリーダーを選択する">
+<!ENTITY  showPreview.accesskey		"S">
+<!ENTITY  subscribeUsing.label		"次のフィードリーダーを使用して購読する:">
+<!ENTITY  subscribeUsing.accesskey	"u">
+<!ENTITY  liveBookmarks.label		"ライブブックマーク">
+<!ENTITY  chooseApplication.label	"アプリケーションを選択...">
+<!ENTITY  chooseApplication.accesskey	"C">

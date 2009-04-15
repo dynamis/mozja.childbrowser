@@ -1,0 +1,10 @@
+<!ENTITY addFeedReader.title
+  "フィードリーダーを追加">
+<!ENTITY addAsDefault.label
+  "既定のフィードリーダーに設定する">
+<!ENTITY addAsDefault.accesskey
+  "M">
+<!ENTITY forSite.label
+  "サイト:">
+<!ENTITY feedReaderRegistered.title
+  "フィードリーダーはすでに登録されています">

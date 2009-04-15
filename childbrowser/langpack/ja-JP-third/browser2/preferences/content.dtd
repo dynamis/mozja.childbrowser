@@ -1,0 +1,52 @@
+<!ENTITY  blockPopups.label		"ポップアップウィンドウをブロックする">
+<!ENTITY  blockPopups.accesskey		"B">
+<!ENTITY  popupExceptions.label		"許可サイト..."><!-- en-US: Exceptions -->
+<!ENTITY  popupExceptions.accesskey	"E">
+
+<!ENTITY  loadImages.label		"画像を自動的に読み込む">
+<!ENTITY  loadImages.accesskey		"I">
+<!ENTITY  exceptions.label		"例外サイト...">
+<!ENTITY  exceptions.accesskey		"x">
+
+<!ENTITY  enableJavaScript.label	"JavaScript を有効にする">
+<!ENTITY  enableJavaScript.accesskey	"J">
+<!ENTITY  advancedJS.label		"詳細設定...">
+<!ENTITY  advancedJS.accesskey		"v">
+
+<!ENTITY  enableJava.label		"Java を有効にする">
+<!ENTITY  enableJava.accesskey		"n">
+
+
+<!ENTITY  fontsAndColors.label		"フォントと配色">
+
+<!ENTITY  defaultFont.label		"既定のフォント:">
+<!ENTITY  defaultFont.accesskey		"D">
+<!ENTITY  defaultSize.label		"サイズ:">
+<!ENTITY  defaultSize.accesskey		"i">
+
+<!ENTITY  advancedFonts.label		"詳細設定...">
+<!ENTITY  advancedFonts.accesskey	"d">
+
+<!ENTITY  colors.label			"配色設定...">
+<!ENTITY  colors.accesskey		"C">
+
+
+<!ENTITY  feeds.label			"フィード">
+
+<!ENTITY  feedReader.label		"フィードリーダー:">
+<!ENTITY  feedReader.accesskey		"F">
+
+<!ENTITY  feedClick.label		"Web フィードをクリックしたとき:">
+<!ENTITY  ask.label			"何を使って購読するか確認する">
+<!ENTITY  ask.accesskey			"A">
+<!ENTITY  subLiveBookmark.label		"常にライブブックマークで購読する">
+<!ENTITY  subLiveBookmark.accesskey	"L">
+<!ENTITY  subReader.label		"常にフィードリーダーで購読する">
+<!ENTITY  subReader.accesskey		"R">
+
+
+<!ENTITY fileTypes.label		"ファイルタイプ">
+
+<!ENTITY configureFileTypes.label	"ファイルの種類に応じた処理方法を設定します。">
+<!ENTITY manage.label			"管理...">
+<!ENTITY manage.accesskey		"M">

@@ -1,0 +1,3 @@
+content	foxfilter	content/
+locale	foxfilter	en-US locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://foxfilter/content/foxfilterOverlay.xul

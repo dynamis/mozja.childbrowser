@@ -1,0 +1,81 @@
+<!--
+-->
+
+<!ENTITY fileMenu.label			"ファイル">
+<!ENTITY fileMenu.accesskey		"F">
+<!ENTITY viewMenu.label			"表示">
+<!ENTITY viewMenu.accesskey		"V">
+
+<!ENTITY closeCmd.label			"閉じる">
+<!ENTITY closeCmd.accesskey		"C">
+<!ENTITY closeCmd.commandkey		"W">
+
+<!ENTITY menuitem.newBookmark.label	"新しいブックマーク...">
+<!ENTITY menuitem.newBookmark.accesskey	"B">
+<!ENTITY menuitem.newLivemark.label	"新しいライブブックマーク...">
+<!ENTITY menuitem.newLivemark.accesskey	"L">
+<!ENTITY menuitem.newFolder.label	"新しいフォルダ...">
+<!ENTITY menuitem.newFolder.accesskey	"o">
+<!ENTITY menuitem.newSeparator.label	"新しい区切り">
+<!ENTITY menuitem.newSeparator.accesskey	"t">
+<!ENTITY menuitem.import.label		"インポート...">
+<!ENTITY menuitem.import.accesskey	"i">
+<!ENTITY menuitem.export.label		"エクスポート...">
+<!ENTITY menuitem.export.accesskey	"e">
+<!ENTITY menuitem.find.label		"ブックマークを検索...">
+<!ENTITY command.findBookmarks.label	"検索...">
+<!ENTITY menuitem.find.accesskey	"S">
+<!ENTITY edit.find.keybinding		"f">
+<!ENTITY command.properties.label	"プロパティ...">
+<!ENTITY command.properties.accesskey	"i">
+<!ENTITY edit.properties.keybinding	"i">
+<!ENTITY command.rename.label		"名前を変更...">
+<!ENTITY command.rename.accesskey	"R">
+<!ENTITY command.delete.label		"削除">
+<!ENTITY command.delete.accesskey	"D">
+<!ENTITY command.moveBookmark.label	"ブックマークを移動...">
+<!ENTITY command.moveBookmarkShort.label	"移動...">
+<!ENTITY command.moveBookmark.accesskey	"M">
+<!ENTITY command.addBookmark.label	"追加...">
+<!ENTITY command.manageBookmarks.label	"管理">
+<!ENTITY command.refreshLivemark.label	"ライブブックマークを再読み込み">
+<!ENTITY command.refreshLivemark.accesskey	"L">
+
+<!ENTITY menuitem.view.command.toolbar.label		"ツールバー">
+<!ENTITY menuitem.view.command.toolbar.accesskey	"t">
+<!ENTITY menuitem.view.show_columns.label		"列を表示">
+<!ENTITY menuitem.view.show_columns.accesskey		"S">
+<!ENTITY menuitem.view.unsorted.label			"並び替えなし">
+<!ENTITY menuitem.view.unsorted.accesskey		"u">
+<!ENTITY sortAscending.label				"昇順">
+<!ENTITY sortAscending.accesskey			"A">
+<!ENTITY sortDescending.label				"降順">
+<!ENTITY sortDescending.accesskey			"D">
+<!ENTITY menuitem.personaltoolbarfolder.label		"ブックマークツールバーフォルダに設定">
+<!ENTITY menuitem.personaltoolbarfolder.accesskey	"b">
+
+<!ENTITY treecol.name.label		"名前">
+<!ENTITY treecol.name.accesskey		"n">
+<!ENTITY treecol.url.label		"URL">
+<!ENTITY treecol.url.accesskey		"l">
+<!ENTITY treecol.shortcut.label		"キーワード">
+<!ENTITY treecol.shortcut.accesskey	"k">
+<!ENTITY treecol.addedon.label		"作成日時">
+<!ENTITY treecol.addedon.accesskey	"a">
+<!ENTITY treecol.lastmod.label		"最終更新日時">
+<!ENTITY treecol.lastmod.accesskey	"m">
+<!ENTITY treecol.lastvisit.label	"最終訪問日時">
+<!ENTITY treecol.lastvisit.accesskey	"b">
+<!ENTITY treecol.description.label	"説明">
+<!ENTITY treecol.description.accesskey	"d">
+
+<!ENTITY bookmarksRoot.label		"ブックマーク">
+
+<!ENTITY bookmarksWindowTitle.label	"ブックマークの管理">
+
+<!ENTITY search.label			"検索:">
+<!ENTITY search.accesskey		"S">
+
+<!-- selectBookmark.xul -->
+<!ENTITY selectBookmark.title		"ホームページに設定">
+<!ENTITY selectBookmark.label		"ホームページに設定するブックマークを選択してください。フォルダを選択すると、選択したフォルダの直下にあるブックマークすべてをタブを使って同時に開くようになります。">

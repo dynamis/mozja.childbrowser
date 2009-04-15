@@ -1,0 +1,9 @@
+skin	browser	theme34	jar:chrome/theme34.jar!/browser2/ appversion<3.0pre
+skin	browser	theme34 jar:chrome/theme34.jar!/browser3/ appversion>=3.0pre
+skin	communicator	theme34	jar:chrome/theme34.jar!/communicator/
+skin	global	theme34	jar:chrome/theme34.jar!/global2/ appversion<3.0pre
+skin	global	theme34	jar:chrome/theme34.jar!/global3/ appversion>=3.0pre
+skin	help	theme34	jar:chrome/theme34.jar!/help2/ appversion<3.0pre
+skin	help	theme34	jar:chrome/theme34.jar!/help3/ appversion>=3.0pre
+skin	mozapps	theme34	jar:chrome/theme34.jar!/mozapps2/ appversion<3.0pre
+skin	mozapps	theme34	jar:chrome/theme34.jar!/mozapps3/ appversion>=3.0pre

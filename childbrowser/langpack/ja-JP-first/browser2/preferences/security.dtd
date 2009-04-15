@@ -1,0 +1,52 @@
+<!ENTITY  warnAddonInstall.label	"アドオンのインストールを求められたときに警告する">
+<!ENTITY  warnAddonInstall.accesskey	"W">
+
+<!-- LOCALIZATION NOTE (tellMaybeForgery.label):
+  The methods by which forged (phished) sites will be detected by phishing
+  providers will vary from human review to machine-based heuristics to a
+  combination of both, so it's important that this string and
+  useDownloadedList.label convey the meaning "suspected" (and not something like
+  "known").
+-->
+<!ENTITY  tellMaybeForgery.label	"表示中のサイトに偽装サイトの疑いがある場合は警告する">
+<!ENTITY  tellMaybeForgery.accesskey	"T">
+
+<!ENTITY  useDownloadedList.label	"偽装の疑いがあるサイトの一覧をダウンロードして使用する">
+<!ENTITY  useDownloadedList.accesskey	"d">
+
+<!-- LOCALIZATION NOTE (askThirdParty.label):
+  The entities askThirdParty.label and askThirdPartyAfter.label appear on a
+  single line in preferences as follows:
+
+  &askThirdParty.label  [ menulist of phishing list providers ]   &askThirdPartyAfter.label;
+-->
+<!ENTITY  askThirdParty.label		"表示するサイトすべてについて">
+<!ENTITY  askThirdParty.accesskey	"a">
+<!ENTITY  askThirdPartyAfter.label	"に問い合わせる">
+
+<!ENTITY  addonExceptions.label		"許可サイト..."><!-- en-US: Exception -->
+<!ENTITY  addonExceptions.accesskey	"E">
+
+
+<!ENTITY  passwords.label		"パスワード">
+
+<!ENTITY  rememberPasswords.label	"サイトのパスワードを記憶する">
+<!ENTITY  rememberPasswords.accesskey	"R">
+<!ENTITY  passwordExceptions.label	"例外サイト...">
+<!ENTITY  passwordExceptions.accesskey	"x">
+
+<!ENTITY  useMasterPassword.label	"マスターパスワードを使用">
+<!ENTITY  useMasterPassword.accesskey	"U">
+<!ENTITY  changeMasterPassword.label	"マスターパスワードを変更...">
+<!ENTITY  changeMasterPassword.accesskey "M">
+
+<!ENTITY  showPasswords.label		"パスワードを表示...">
+<!ENTITY  showPasswords.accesskey	"P">
+
+
+<!ENTITY  warnings.label		"警告メッセージ">
+
+<!ENTITY  chooseWarnings.label		"Web ブラウズ中に表示する警告メッセージを選択してください。">
+
+<!ENTITY  warningSettings.label		"設定...">
+<!ENTITY  warningSettings.accesskey	"S">

@@ -1,0 +1,9 @@
+skin	browser	theme56	jar:chrome/theme56.jar!/browser2/ appversion<3.0pre
+skin	browser	theme56 jar:chrome/theme56.jar!/browser3/ appversion>=3.0pre
+skin	communicator	theme56	jar:chrome/theme56.jar!/communicator/
+skin	global	theme56	jar:chrome/theme56.jar!/global2/ appversion<3.0pre
+skin	global	theme56	jar:chrome/theme56.jar!/global3/ appversion>=3.0pre
+skin	help	theme56	jar:chrome/theme56.jar!/help2/ appversion<3.0pre
+skin	help	theme56	jar:chrome/theme56.jar!/help3/ appversion>=3.0pre
+skin	mozapps	theme56	jar:chrome/theme56.jar!/mozapps2/ appversion<3.0pre
+skin	mozapps	theme56	jar:chrome/theme56.jar!/mozapps3/ appversion>=3.0pre

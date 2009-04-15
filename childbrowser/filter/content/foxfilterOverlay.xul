@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE overlay SYSTEM 'chrome://foxfilter/locale/foxfilter.dtd'
+[
+  <!ENTITY % foxfilterDTD SYSTEM "chrome://foxfilter/locale/foxfilterOverlay.dtd" >
+  %foxfilterDTD;
+]>
+<overlay id="foxfilter-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="prototype.js" />
+  <script src="json.js" />
+  <script src="foxfilterOverlay.js" />
+  <script src="foxfilter.js" />
+  <script src="listeners.js" />
+  <script src="util_menu.js" />
+
+
+  
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="foxfilter-menu" label="&foxfilter.menuitem.foxfi0;" oncommand="foxfilter.onMenuItemCommand(event);"/>
+  </menupopup>
+
+  <statusbar id="status-bar">
+    <statusbarpanel
+		  id="FoxFilterPanel"
+		  label="FoxFilter Enabled"
+		  style="background-color:#ffffff;"
+		  tooltiptext="&foxfilter.status.tooltip;"
+		  onclick="foxfilter.onMenuItemCommand(event);">
+
+      <image id="img-status-foxfilter" src="chrome://foxfilter/content/on.gif" tooltiptext="&foxfilter.status.tooltip;" />
+      
+    </statusbarpanel>
+  </statusbar>
+
+</overlay>
+

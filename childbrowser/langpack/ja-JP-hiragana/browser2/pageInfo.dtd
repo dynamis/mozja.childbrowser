@@ -1,0 +1,87 @@
+<!--
+-->
+
+<!ENTITY  preface		"情報: ">
+
+<!ENTITY  title			"ページ情報">
+<!ENTITY  description		"現在のページの情報">
+<!ENTITY  pageInfoWindow.width	"425">
+<!ENTITY  pageInfoWindow.height	"470">
+
+<!ENTITY  copy.key		"C">
+<!ENTITY  copy.label		"コピー">
+<!ENTITY  copy.accesskey	"C">
+<!ENTITY  selectall.key		"A">
+<!ENTITY  selectall.label	"すべて選択">
+<!ENTITY  selectall.accesskey	"A">
+<!ENTITY  closeWindow.key	"w">
+
+<!ENTITY  generalTab		"一般">
+<!ENTITY  generalAccesskey      "G">
+<!ENTITY  generalTitle		"タイトル:">
+<!ENTITY  generalURL		"アドレス:">
+<!ENTITY  generalMode		"描画モード:">
+<!ENTITY  generalType		"MIME タイプ:">
+<!ENTITY  generalSize		"サイズ:">
+<!ENTITY  generalReferrer	"参照元 URL:">
+<!ENTITY  generalSource		"キャッシュソース:">
+<!ENTITY  generalSent		"送信:">
+<!ENTITY  generalModified	"更新日時:">
+<!ENTITY  generalExpires	"有効期限:">
+<!ENTITY  generalEncoding	"もじエンコーディング:">
+<!ENTITY  generalMeta		"meta 要素一覧:">
+<!ENTITY  generalMetaName	"名前">
+<!ENTITY  generalMetaContent	"値">
+
+<!ENTITY  formsTab		"フォーム">
+<!ENTITY  formsAccesskey	"F">
+<!ENTITY  formAction		"フォームアクション">
+<!ENTITY  formMethod		"メソッド">
+<!ENTITY  formName		"名前">
+<!ENTITY  formNo		"No.">
+<!ENTITY  formEncoding		"もじエンコーディング:">
+<!ENTITY  formTarget		"ターゲット:">
+<!ENTITY  formFields		"フィールド:">
+<!ENTITY  formLabel		"ラベル">
+<!ENTITY  formFName		"フィールド名">
+<!ENTITY  formType		"タイプ">
+<!ENTITY  formCValue		"現在の値">
+
+<!ENTITY  linksTab		"リンク">
+<!ENTITY  linksAccesskey	"L">
+<!ENTITY  linkNo		"No.">
+<!ENTITY  linkName		"名前">
+<!ENTITY  linkAddress		"URL">
+<!ENTITY  linkType		"種類">
+<!ENTITY  linkTarget		"ターゲット">
+<!ENTITY  linkAccessKey		"アクセスキー">
+
+<!ENTITY  mediaTab		"メディア">
+<!ENTITY  mediaAccesskey	"M">
+<!ENTITY  mediaHeader		"ページの画像">
+<!ENTITY  mediaURL		"アドレス:">
+<!ENTITY  mediaBase		"ベースアドレス:">
+<!ENTITY  mediaAlt		"代替テキスト:">
+<!ENTITY  mediaAltHeader	"代替テキスト">
+<!ENTITY  mediaNo		"No.">
+<!ENTITY  mediaName		"名前">
+<!ENTITY  mediaAddress		"URL">
+<!ENTITY  mediaType		"種類">
+<!ENTITY  mediaCount            "カウント">
+<!ENTITY  mediaPlugin		"プラグイン:">
+<!ENTITY  mediaCharset		"もじエンコーディング:">
+<!ENTITY  mediaDimensions	"指定の大きさ:">
+<!ENTITY  mediaPhysDimensions	"実際の大きさ:">
+<!ENTITY  mediaEncryption	"暗号化:">
+<!ENTITY  mediaTitle		"タイトル:">
+<!ENTITY  mediaLongdesc		"詳細説明:">
+<!ENTITY  mediaSaveAs		"名前を付けて保存...">
+<!ENTITY  mediaSaveAs.accesskey	"S">
+<!ENTITY  mediaPreview		"メディアプレビュー:"><!-- (^^; 要再検討 -->
+
+
+<!ENTITY  framesTab		"フレーム">
+<!ENTITY  framesTab.accesskey	"r">
+<!ENTITY  frameName		"名前">
+<!ENTITY  frameAddress		"URL">
+<!ENTITY  frameType		"MIME タイプ">

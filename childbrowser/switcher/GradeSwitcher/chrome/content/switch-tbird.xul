@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay [
+  <!ENTITY % prefExtDTD SYSTEM "chrome://mozapps/locale/extensions/extensions.dtd">
+  %prefExtDTD;
+]>
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+         id="eSwitchLocales_overlay">
+  <script id="eSwitchLocales_script" type="application/x-javascript" src="chrome://locale-switch/content/switch.js" />
+
+  <menupopup id="taskPopup">
+    <menu id="eSwitchLocales_menu"
+          label="&locales.label;"
+          insertbefore="devToolsSeparator">
+      <menupopup id="eSwitchLocales_popup" onpopupshowing="eSwitchLocales_load(this)" />
+    </menu>
+  </menupopup>
+</overlay>

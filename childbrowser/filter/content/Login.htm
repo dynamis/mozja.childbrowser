@@ -1,0 +1,118 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>FoxFilter Login</title>
+    <style type="text/css">
+		@import "domtab.css";
+	</style>
+
+    <script type="text/javascript" language="javascript">
+
+function checkIfNoPassword()
+{
+    //get prefs
+    var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+
+    var password = prefs.getCharPref("FoxFilter.password").toLowerCase();
+
+    if(password == "")
+        window.document.location.href="Settings.htm";           
+
+}
+
+function passwordKeydown()
+{
+    if(event.which || event.keyCode)
+    {
+        if ((event.which == 13) || (event.keyCode == 13)) 
+        {
+            confirm();
+            return false;
+        }
+    } 
+    else 
+    {
+        return true;
+    }
+}
+
+function confirm()
+{
+    //get prefs
+    var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+    var password = prefs.getCharPref("FoxFilter.password").toLowerCase();
+    var textPassword = document.getElementById("TextPassword");
+    
+    if( textPassword.value == password)
+    {
+        //use this to make sure Settings.htm cannot be accessed by typing "chrome://foxfilter/content/Settings.htm"
+        prefs.setBoolPref("FoxFilter.loginSuccessful", true);  
+        window.document.location.href="Settings.htm";
+    }
+    else
+    {
+        //alert("invalid password");
+        document.getElementById("message").innerHTML = "<span style='color:red'>Invalid password</span>";
+    }    
+
+}
+
+
+    </script>
+
+</head>
+<body onload="checkIfNoPassword();">
+    <h1>
+        <img src="logo.gif" class="texttop" />&nbsp;FoxFilter Password Required</h1>
+    <div align="center">
+        <br />
+        <table>
+            <tr>
+                <td colspan="2">
+                    To change filtering preferences, please
+                    <br />
+                    enter your FoxFilter password below:<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:&nbsp; &nbsp;</td>
+                <td>
+                    <input id="TextPassword" type="password" onkeydown="passwordKeydown();" />
+                    &nbsp; 
+                    <input id="ButtonSubmit" class="smallButton" type="button" value="Submit" onclick="confirm();" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <span id="message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <a href='ForgotPassword.htm' style="color:#ccc;">Forgot your password</a>?&nbsp;</td>
+            </tr>
+        </table>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;&nbsp;<br />
+            
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+    </div>
+</body>
+</html>

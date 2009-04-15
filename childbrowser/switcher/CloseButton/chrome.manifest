@@ -1,0 +1,32 @@
+overlay	chrome://browser/content/browser.xul	chrome://quickrestart/content/quickrestart2.xul	appversion<3.0pre
+overlay	chrome://browser/content/browser.xul	chrome://quickrestart/content/quickrestart3.xul	appversion>=3.0pre
+
+content	quickrestart	chrome/content/
+
+skin	quickrestart	classic	chrome/skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://quickrestart/skin/quickrestart2.css	appversion<3.0pre
+style	chrome://browser/content/browser.xul	 chrome://quickrestart/skin/quickrestart2.css	appversion<3.0pre
+style	chrome://navigator/content/navigator.xul	chrome://quickrestart/skin/quickrestart2.css	appversion<3.0pre
+
+style	chrome://global/content/customizeToolbar.xul	chrome://quickrestart/skin/quickrestart3.css	appversion>=3.0pre
+style	chrome://browser/content/browser.xul	 chrome://quickrestart/skin/quickrestart3.css	appversion>=3.0pre
+style	chrome://navigator/content/navigator.xul	chrome://quickrestart/skin/quickrestart3.css	appversion>=3.0pre
+
+
+locale	quickrestart	cs-CZ	chrome/locale/cs-CZ/
+locale	quickrestart	de-DE	chrome/locale/de-DE/
+locale	quickrestart	en-US	chrome/locale/en-US/
+locale	quickrestart	es-AR	chrome/locale/es-AR/
+locale	quickrestart	es-CL	chrome/locale/es-CL/
+locale	quickrestart	es-ES	chrome/locale/es-ES/
+locale	quickrestart	fr-FR	chrome/locale/fr-FR/
+locale	quickrestart	hu-HU	chrome/locale/hu-HU/
+locale	quickrestart	it-IT	chrome/locale/it-IT/
+locale	quickrestart	ja-JP	chrome/locale/ja-JP/
+locale	quickrestart	pl-PL	chrome/locale/pl-PL/
+locale	quickrestart	pt-BR	chrome/locale/pt-BR/
+locale	quickrestart	ru-RU	chrome/locale/ru-RU/
+locale	quickrestart	sr-RS	chrome/locale/sr-RS/
+locale	quickrestart	tr-TR	chrome/locale/tr-TR/
+locale	quickrestart	zh-CN	chrome/locale/zh-CN/
+locale	quickrestart	zh-TW	chrome/locale/zh-TW/

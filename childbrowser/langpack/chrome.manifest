@@ -1,0 +1,26 @@
+locale necko ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/necko/ appversion<3.0pre
+locale necko ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/necko/ appversion>=3.0pre
+locale pipnss ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/pipnss/ appversion<3.0pre
+locale pippki ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/pippki/ appversion>=3.0pre
+locale help ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/help/ appversion<3.0pre
+locale help ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/help/ appversion>=3.0pre
+locale passwordskr ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/passwordskr/ appversion<3.0pre
+locale passwordskr ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/passwordskr/ appversion>=3.0pre
+locale global ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/global/ appversion<3.0pre
+locale global ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/global/ appversion>=3.0pre
+locale mozapps ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/mozapps/ appversion<3.0pre
+locale mozapps ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/mozapps/ appversion>=3.0pre
+locale global-region ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/global-region/ appversion<3.0pre
+locale global-region ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/global-region/ appversion>=3.0pre
+locale global-platform ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/global-platform/ appversion<3.0pre
+locale global-platform ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/global-platform/ appversion>=3.0pre
+locale cookie ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/cookie/ appversion<3.0pre
+locale cookie ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/cookie/ appversion>=3.0pre
+locale autoconfig ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/autoconfig/ appversion<3.0pre
+locale autoconfig ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/autoconfig/ appversion>=3.0pre
+locale reporter ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana2/reporter/ appversion<3.0pre
+locale reporter ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/ja-JP-hiragana3/reporter/ appversion>=3.0pre
+locale browser ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/browser2/ appversion<3.0pre
+locale browser ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/browser3/ appversion>=3.0pre
+locale branding ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/branding/ 
+locale browser-region ja-JP-hiragana jar:chrome/ja-JP-hiragana.jar!/locale/browser-region/

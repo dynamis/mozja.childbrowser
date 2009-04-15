@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>フィルタ設定</title>
+    <style type="text/css">
+		@import "domtab.css";
+	</style>
+    <script type="text/javascript" src="domtab.js"></script>
+
+    <script type="text/javascript">
+		document.write('<style type="text/css">');    
+		document.write('div.domtab div{display:none;}');
+		document.write('</style>');    
+    </script>
+
+    <script type="text/javascript" src="util_menu.js"></script>
+
+    <script type="text/javascript" language="javascript">
+	
+
+    //use this to make sure Settings.htm cannot be accessed by typing "chrome://foxfilter/content/Settings.htm"
+    var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+    if(prefs.getBoolPref("FoxFilter.loginSuccessful") == false)
+    {
+        if(prefs.getCharPref("FoxFilter.password") != "")
+            document.location.href="Settings.htm";
+    }
+    else
+        prefs.setBoolPref("FoxFilter.loginSuccessful", false);  
+
+
+
+    function bubbleSortArray(arrayName) 
+    {
+        for (var i=0; i<(arrayName.length-1); i++)
+        {
+            for (var j=i+1; j<arrayName.length; j++)
+            {
+                if (arrayName[j] < arrayName[i]) 
+                {
+                    var dummy = arrayName[i];
+                    arrayName[i] = arrayName[j];
+                    arrayName[j] = dummy;
+                }
+            }   
+        }
+    }
+
+    function rtrim ( s )
+    {
+       return s.replace( /\s*$/, "" );
+    }
+
+    function replaceCommaWithBreak(val)
+    {
+        var newVal = val;   
+        newVal = newVal.replace(new RegExp(/,/g), "\r\n"); 
+        return newVal; 
+    }
+    function replaceBreakWithComma(val)
+    { 
+        var newVal = val;   
+        newVal = newVal.replace(new RegExp( "\\n", "g" ), ","); 
+        var newString = "";
+
+        //remove all empty values (spaces in list)
+        var newArray = newVal.split(',');
+        
+        //sort the array before removing empty items
+        bubbleSortArray(newArray);
+
+        var ctr = 0;
+
+        for(var i=0; i < newArray.length; i++)
+        {        
+	        if(newArray[i].length == 0)
+            {          
+            }    
+	        else
+	        {
+	            if(newArray[i] != "")
+	            {
+		            if(ctr > 0)
+			            newString += ",";
+
+		            newString += rtrim(newArray[i]);
+
+		            ctr++;
+		        }
+	        }
+        }
+
+
+        return newString;
+    }
+
+
+
+
+    function loadFields()
+    {
+        //get prefs
+        var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+
+
+        if(prefs.getBoolPref("FoxFilter.enabled"))
+            document.getElementById("Radio1").checked = true;
+     
+        else
+            document.getElementById("Radio3").checked = true;
+
+        
+
+        //load current keyword list
+
+        document.getElementById("TextEmail").value = prefs.getCharPref("FoxFilter.email").toLowerCase();
+        document.getElementById("TextEmailReenter").value = prefs.getCharPref("FoxFilter.email").toLowerCase();
+
+
+        document.getElementById("TextPassword").value = prefs.getCharPref("FoxFilter.password").toLowerCase();
+        document.getElementById("TextPasswordReenter").value = prefs.getCharPref("FoxFilter.password").toLowerCase();
+        document.getElementById("TextPasswordReminder").value = prefs.getCharPref("FoxFilter.passwordReminder");
+
+
+        document.getElementById("TextAreaKeywords").value = replaceCommaWithBreak(prefs.getCharPref("FoxFilter.keywords"));   
+        document.getElementById("TextAreaKeywordPhrases").value = replaceCommaWithBreak(prefs.getCharPref("FoxFilter.keywordPhrases")); 
+
+        document.getElementById("TextAreaURLExceptions").value = replaceCommaWithBreak(prefs.getCharPref("FoxFilter.urlExceptions"));   
+
+
+        
+        document.getElementById("CheckboxExamineTitle").checked = prefs.getBoolPref("FoxFilter.examineTitle");
+        document.getElementById("CheckboxExamineMeta").checked = prefs.getBoolPref("FoxFilter.examineMeta");
+        document.getElementById("CheckboxExamineBody").checked = prefs.getBoolPref("FoxFilter.examineBody");
+	document.getElementById("CheckboxExamineUrl").checked = prefs.getBoolPref("FoxFilter.examineUrl");
+
+        document.getElementById("CheckboxEnableAddons").checked = prefs.getBoolPref("FoxFilter.addonsEnabled");
+        document.getElementById("CheckboxEnableAboutConfig").checked = prefs.getBoolPref("FoxFilter.aboutConfigEnabled");
+
+
+    }
+
+    function saveChanges()
+    {
+
+        var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+
+        //make sure email values match
+        if(document.getElementById("TextEmail").value.toLowerCase() != document.getElementById("TextEmailReenter").value.toLowerCase())
+        {
+            document.getElementById("errorMessage").innerHTML = "Emails do not match";
+            return false;
+        }
+
+        //make sure password and re-entered password values match
+        if(document.getElementById("TextPassword").value.toLowerCase() != document.getElementById("TextPasswordReenter").value.toLowerCase())
+        {
+            //alert("Passwords do not match");
+            document.getElementById("errorMessage").innerHTML = "Passwords do not match";
+            return false;
+        }
+
+        //IMPORTANT: If password entered, require Email address 
+        if(document.getElementById("TextPassword").value != "" && document.getElementById("TextEmail").value == "")
+        {
+            document.getElementById("errorMessage").innerHTML = "To secure your settings with a password, you must enter your email address.";
+            return false;
+        }
+
+        if(document.getElementById("Radio1").checked)
+        {
+            prefs.setBoolPref("FoxFilter.enabled", true);  
+            prefs.setBoolPref("FoxFilter.whitelistEnabled", false);     
+        }
+        else if(document.getElementById("Radio3").checked)
+        {
+            prefs.setBoolPref("FoxFilter.enabled", false);  
+            prefs.setBoolPref("FoxFilter.whitelistEnabled", false);     
+        }
+
+        prefs.setCharPref("FoxFilter.email", document.getElementById("TextEmail").value.toLowerCase());        
+        prefs.setCharPref("FoxFilter.password", document.getElementById("TextPassword").value.toLowerCase());
+        prefs.setCharPref("FoxFilter.passwordReminder", document.getElementById("TextPasswordReminder").value);
+        
+        
+        //get csv list of keywords 
+        var keywords = replaceBreakWithComma(document.getElementById("TextAreaKeywords").value);
+        var keywordPhrases = replaceBreakWithComma(document.getElementById("TextAreaKeywordPhrases").value);
+        var urls = replaceBreakWithComma(document.getElementById("TextAreaURLExceptions").value);
+
+        prefs.setCharPref("FoxFilter.keywords", keywords);
+        prefs.setCharPref("FoxFilter.keywordPhrases", keywordPhrases);     
+        prefs.setCharPref("FoxFilter.urlExceptions", urls);
+
+         
+        prefs.setBoolPref("FoxFilter.examineTitle", document.getElementById("CheckboxExamineTitle").checked); 
+        prefs.setBoolPref("FoxFilter.examineMeta", document.getElementById("CheckboxExamineMeta").checked); 
+        prefs.setBoolPref("FoxFilter.examineBody", document.getElementById("CheckboxExamineBody").checked); 
+        prefs.setBoolPref("FoxFilter.examineUrl", document.getElementById("CheckboxExamineUrl").checked); 
+
+        prefs.setBoolPref("FoxFilter.addonsEnabled", document.getElementById("CheckboxEnableAddons").checked);   
+        prefs.setBoolPref("FoxFilter.aboutConfigEnabled", document.getElementById("CheckboxEnableAboutConfig").checked);   
+
+        
+        menu_disableAddons(!document.getElementById("CheckboxEnableAddons").checked)  
+
+
+        //Get the Browser Window and set the FoxFilter image accordingly
+        var windowMediator = Components.classes["@mozilla.org/appshell/window-mediator;1"].getService(Components.interfaces.nsIWindowMediator);
+        var browserWin = windowMediator.getMostRecentWindow("navigator:browser");
+        var ffImgStatus = browserWin.document.getElementById('img-status-foxfilter');        
+        if(document.getElementById("Radio3").checked)
+        {
+            ffImgStatus.src = "chrome://foxfilter/content/off.gif";
+        }
+        else
+        {
+            ffImgStatus.src = "chrome://foxfilter/content/on.gif";
+        }
+
+
+
+
+        document.location.href="Confirm.htm";
+
+    }
+
+    function closeSettings()
+    {
+        document.location.href="Confirm.htm";
+    }
+
+
+
+    </script>
+
+</head>
+<body onload="loadFields();">
+    <h1>
+        <img src="logo.gif" class="texttop" />&nbsp;フィルタの選択</h1>
+	<div align="center">
+        Copyright &copy 2008 <a href='http://inspiredeffect.com/FoxFilter' target="_blank"
+            style="color: #ffffff">InspiredEffect.com</a></div>
+    <div class="domtab">
+        <ul class="domtabs">
+            <li><a href="#mode">モード</a></li>
+            <li><a href="#filters">追加するフィルタ</a></li>
+            <!--<li><a href="#exceptions">ホワイトリスト</a></li>-->
+            <li><a href="#sensitivity">使用フィルタ選択</a></li>
+            <!--<li><a href="#security">セキュリティ</a></li>-->
+        </ul>
+        <div>
+            <h2>
+                <a name="mode" id="mode">有効/無効</a></h2>
+            <p>
+                必要に応じてフィルタを有効にするか無効にするか設定してください
+                <br />
+                <br />
+                <input id="Radio1" name="RadioMode" type="radio" value="filter" />
+                フィルタを有効
+                <br />
+                <input id="Radio3" name="RadioMode" type="radio" value="off" />
+                フィルタを無効
+                <br />
+                <br />
+            </p>
+        </div>
+        <div>
+            <h2>
+                <a name="filters" id="filters">利用するポータルサイトを追加します</a></h2>
+            <p>
+		利用するポータルサイトのURLを入力してください
+                </p>
+
+            <table style="width: 700px">
+                <tr>
+                    <td>
+                        <h2>
+                            以下のポータルサイトでWebサイトを妨げます</h2>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <h2>
+                            <!--キーワードマッチを無効にします</h2>-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="TextAreaKeywords" style="width: 300px; height: 150px"></textarea></td>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <textarea id="TextAreaKeywordPhrases" style="width: 0px; height: 0px"></textarea><br />
+                        <br />
+                        </td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div>
+            <h2>
+                <a name="exceptions" id="exceptions">例外のウェブサイト</a></h2>
+            <p>
+                ホワイトリストで許可するサイトのURL記述してください<br />
+                <br />
+            </p>
+            <textarea id="TextAreaURLExceptions" style="width: 300px; height: 250px"></textarea>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+        <div>
+            <h2>
+                <a name="senstivity" id="sensitivity">使用フィルタ選択</a></h2>
+            <p>
+                以下で使用するフィルタを決定してください<br />
+                <br />
+                <input id="CheckboxExamineTitle" type="checkbox" />
+                1つのフィルタだけでも表示可能ならば表示（ORフィルタリング）<br />
+                <input id="CheckboxExamineMeta" type="checkbox" />
+                Yahoo!きっずのフィルタを使用<br />
+                <input id="CheckboxExamineBody" type="checkbox" />
+                キッズgooのフィルタを使用<br />
+		<input id="CheckboxExamineUrl" type="checkbox" />
+                Ask kidsのフィルタを使用<br />
+                <br />
+            </p>
+        </div>
+        <div>
+            <h2>
+                <a name="security" id="security">セキュリティ機能</a></h2>
+            <p>
+                パスワードであなたの設定を保証します</p>
+            <p>
+                &nbsp;</p>
+            <table cellpadding="4" cellspacing="4">
+                <tr>
+                    <td>
+                        メールアドレス:</td>
+                    <td>
+                        <input id="TextEmail" style="width: 300px" type="text" />
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        メールアドレス（再入力）:</td>
+                    <td>
+                        <input id="TextEmailReenter" style="width: 300px" type="text" /></td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        パスワード:&nbsp;<br />
+                    </td>
+                    <td>
+                        <input id="TextPassword" type="text" maxlength="20" style="width: 150px;" />
+                    </td>
+                    <td>
+                        (最大半角20文字まで) &nbsp; &nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        パスワード（再入力）:</td>
+                    <td>
+                        <input id="TextPasswordReenter" type="text" maxlength="20" style="width: 150px;" />
+                    </td>
+                    <td>
+                        (最大半角20文字まで)<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        パスワードを思い出させるもの:</td>
+                    <td>
+                        <input id="TextPasswordReminder" type="text" maxlength="50" style="width: 200px;" />
+                        &nbsp;</td>
+                    <td>
+                        (最大半角50文字まで)<br />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            これはフィルタがアンインストールまたは無効にされるのを防ぎます<br />
+            <br />
+            <input id="CheckboxEnableAddons" type="checkbox" />
+            ツール/アドオンの特徴を可能にする<br />
+            <input id="CheckboxEnableAboutConfig" type="checkbox" />
+            コンフィグの表示を可能にする<br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+        <span id="errorMessage" style="font-weight: bold; color: red;"></span>
+    </div>
+    <p style="margin: 10px 0 0 40px;">
+        <input id="ButtonSubmit" type="button" value="変更を保存" onclick="saveChanges();" />
+        <input id="ButtonCancel" type="button" value="終了" onclick="closeSettings();" />
+
+	
+    </p>
+</body>
+</html>

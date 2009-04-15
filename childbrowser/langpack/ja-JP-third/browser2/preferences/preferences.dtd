@@ -1,0 +1,14 @@
+
+<!ENTITY  prefWindow.titleWin	"オプション">
+<!ENTITY  prefWindow.titleGNOME	"&brandShortName; の設定">
+<!ENTITY  prefWindow.styleWin	"width: 46em; height: 41em;"><!-- en-US: width: 42em; height: 40em; -->
+<!ENTITY  prefWindow.styleMac	"width: 51em;"><!-- en-US: 47em -->
+<!ENTITY  prefWindow.styleGNOME	"width: 42em; height: 38.5em;"><!-- en-US: width: 42em; height: 38.5em; -->
+
+<!ENTITY  paneMain.title	"一般"><!-- en-US: Main -->
+<!ENTITY  paneTabs.title	"タブ">
+<!ENTITY  paneContent.title	"コンテンツ">
+<!ENTITY  paneFeeds.title	"フィード">
+<!ENTITY  panePrivacy.title	"プライバシー">
+<!ENTITY  paneSecurity.title	"セキュリティ">
+<!ENTITY  paneAdvanced.title	"詳細">
